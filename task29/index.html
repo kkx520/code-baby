@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单验证1</title>
+	<script type="text/javascript">
+		window.onload  = function(){
+			var oText1 = document.getElementById('text1');	
+			var oBtn1  = document.getElementById('btn1');	
+			var oP1    = document.getElementById('p1');
+			//验证非中文字符
+			var re     = /[^\u4e00-\u9fa5]/g;
+			//验证中文字符
+			var re1    = /[\u4e00-\u9fa5]/g;
+			//验证所有的首空格
+			var re2    = /^\s+/g;
+			var str1   = '';
+			var str2   = '';
+			var str    = '';
+			//保存输入数值的大小
+			var oLen   = 0; 
+			oBtn1.onclick = function(){
+				//去掉所有空格
+				str  = oText1.value.replace(re2,'');
+				//获取所有的非中文字符
+				str1 = str.match(re);
+				//获取所有的中文字符
+				str2 = str.match(re1);
+				//获取中文字符和非中文字符的大小综合
+	oLen = (str2!=null?str2.length*2:0)+(str1!=null?str1.length:0);
+				//通过字符大小判定
+					if (oLen>=4&&oLen<=16) {
+						oP1.innerHTML = "名称格式正确";
+					}
+					else if(oLen==0){
+						oP1.innerHTML = "用户名不能为空";
+					}
+					else {
+						oP1.innerHTML = "必填，长度必须为4~16个字符";
+					}
+			} 
+		}
+	</script>
+</head>
+<body>
+	名称：<input id="text1" type="text" value="	" ></input><input id="btn1" type="button" value="验证"></input><br>
+	<p id="p1"></p>
+	
+</body>
+</html>
