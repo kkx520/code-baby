@@ -20,7 +20,7 @@ function addAqiData() {
 	var re2   = /^\d+$/
 	if(!oCity.match(re1))
 	{
-		alert("城市名必须为中文字符！");
+		alert("城市名必须为中文字符或字符！");
 		return;
 	}
 	if (!oValue.match(re2)) {
