@@ -54,7 +54,7 @@ function getData() {
 function sortAqiData(data) {
   //对data进性从小到大排序
   data.sort(function(data1,data2){
-     return data1[1]-data2[1];
+     return data2[1]-data1[1];
   });
   return data;
 }
