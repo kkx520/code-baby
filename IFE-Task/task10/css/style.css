@@ -1,0 +1,21 @@
+/*public*/
+*{margin: 0;padding:0;}
+
+.content>div{width: 150px;border: 1px solid;border-color:red;margin-top: 50px}
+.box1{height:120px;}
+.box2{height: 100px;}
+.box3{height: 40px;}
+.box4{height: 200px;border-color:#00f!important; }
+@media screen and (min-width:640px){
+    .content{display: flex;width: 100%;justify-content:space-between;align-items: center }
+}
+@media screen and (max-width:640px){
+    .content{display: flex;width: 100%;justify-content:space-between;align-items: flex-start;flex-flow: row wrap }
+}
+@media screen and (max-width:600px){
+    .content{display: flex;width: 100%;justify-content:space-between;align-items: flex-start;flex-flow: row wrap }
+    .box1{order: 2}
+    .box2{order: 3}
+    .box3{order: 4}
+    .box4{order: 1}
+}

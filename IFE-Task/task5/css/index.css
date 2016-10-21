@@ -1,0 +1,41 @@
+*{margin:0;padding:0;}
+input{border:none;}
+img{border: 0;}
+body{background:#dedede;font-family: #dedede;position: relative;}
+header {width: 100%;height: 60px;line-height: 60px;background: #333 url(../images/header_logo.png) no-repeat 38px center;}
+header ul{float: right;margin-right: 25px;}
+header ul li{font-size: 12px;float:left;color:#fff;font-weight: bold;margin-left: 20px;}
+header li.active{color: #959096;}
+article{z-index: 999;min-width: 300px;clear: both;margin: 20px  390px 20px 20px;padding:50px 20px;background:#fff;border:1px solid #9f9f9f;}
+article h1{margin-bottom:20px;}
+article h2{font-size: 16px;margin-bottom: 18px; color:#5e6e6b;}
+article p{font-size: 14px;color: #311404;font-weight:bold;}
+article p.auth_time{font-size: 10px;color:#bbbcae;margin-bottom: 20px;}
+article p.art{text-indent: 2em;line-height: 200%;}
+article p.art1{line-height: 200%;margin-bottom:20px;}
+article img{margin-bottom:20px;}
+article .ul_ol{list-style: none;font-weight: bold;font-size: 14px;line-height:180%;}
+section {min-width: 200px;margin:0 390px 0 20px;padding:50px 20px;background:#fff;border:1px solid #9f9f9f;}
+section dl dt{font-size: 16px;font-weight: bold;margin-bottom: 25px;}
+section dl dd{margin-bottom: 20px;margin-left: 20px;padding:10px;display: inline-block;border: 1px #ccc solid;}
+section dl dd p {margin-bottom: 10px;font-size: 12px;text-align: center;}
+section img{width: 100px;height: 100px;margin:0 auto;display: block;}
+article ol{margin-left: 20px;font-weight: bold;font-size: 14px;line-height:180%;margin-bottom: 20px;}
+article .tab{border:1px #ccc solid;border-collapse:collapse;}
+article .tab  thead th{text-align: left;text-indent: 10px;line-height:180%;border:1px #ccc solid;}
+article .tab  tbody td{text-indent: 10px;line-height:180%;border:1px #ccc solid;}
+article td.td1{width: 500px;}
+article td.td2{width: 200px;}
+article .tab thead{background: #333;color: #fff;}
+article .tab tfoot{background: #ccc;}
+
+aside {font-size: 12px;padding:20px;border:1px solid #9f9f9f;width: 320px;height: 460px;background: #fff;position: absolute;top: 80px;right: 20px;}
+aside h2{margin-bottom: 10px;height: 40px;line-height: 40px;font-size: 16px;border-left: 5px #ccc solid;padding-left: 15px;}
+aside .form-item{margin-bottom: 10px;}
+aside .div-item{display: inline-block;width: 100px;text-align: right;margin-right: 10px;}
+aside .p-item{margin-top: 12px;margin-left: 114px;margin-bottom: 25px;}
+aside .input-item{width: 130px;height:20px;border:1px solid #ccc;}
+aside .btn-item{width: 323px;height: 40px;background: #3355d0;color: #fff;}
+
+footer {width: 100%;height: 70px;background: #000;line-height: 70px;}
+footer p{color: #fff;text-align: center;}

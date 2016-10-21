@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>隐藏溢出</title>
+	<style type="text/css">
+	.clearfix:after{content:".";display:block;height: 0;visibility:hidden;clear: both;}
+	.clearfix{*zoom:1;}
+	.wrap{width: 500px;background: #ccc;border: 1px solid #999;}
+	.main{float: left;width: 200px;height: 100px;background: red;}
+	.side{float: right;width: 200px;height: 100px;background: blue;}
+	.footer{clear: both;width: 500px;height: 200px;background: yellow;}
+	</style>
+</head>
+<body>
+
+	<div class="wrap clearfix">
+		<div class="main"></div>
+		<div class="side"></div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

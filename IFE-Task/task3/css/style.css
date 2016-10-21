@@ -1,0 +1,9 @@
+@charset "utf-8";
+body,div { margin:0; padding:0;}
+.container { border:1px solid #999; padding:20px; margin:20px;overflow:hidden; position: relative; background:#eee;}
+.left-box { width:158px; border:1px solid #999; padding:20px; overflow:hidden; float:left;}
+.left-box img { float:left; margin-right:2px;}
+.right-box {border:1px solid #999; float:right; width:78px; padding:20px;}
+.right-box img { display:block; margin-bottom:20px;}
+.mid-box { border:1px solid #999; width:auto; position: absolute; left:240px; right:160px;}
+.mid-box p { text-indent:2em;}

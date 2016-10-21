@@ -1,0 +1,6 @@
+@charset "utf-8";
+.cont-box { position:absolute; top:50%; left:50%; margin-left:-200px; margin-top:-100px;}
+.main-box { width:400px; height:200px; margin:auto; background:#ccc; position:relative; }
+.circle1-box { border-bottom-right-radius: 100%; top:0; left:0;}
+.circle-box { background:#fc0; width:50px; height:50px; position:absolute;}
+.circle2-box { border-top-left-radius: 100%; bottom:0; right:0;}

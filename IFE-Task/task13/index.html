@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+
+  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button">确认填写</button>
+
+  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+(function() {
+	
+  /*在注释下方写下代码
+  给按钮button绑定一个点击事件
+  在事件处理函数中
+  获取aqi-input输入的值，并显示在aqi-display中*/
+
+    var oBtn = document.getElementById('button');
+    var oAqi_input = document.getElementById('aqi-input');
+    var oAqi_display = document.getElementById('aqi-display');
+    //判断输入的是否是空格
+    var re = /\s/g;
+    //ie
+    if (oBtn.attachEvent) {
+        //给oBtn绑定一个onclick方法。
+         oBtn.attachEvent('onclick',function(){
+          if (re.test(oAqi_input.value)||oAqi_input.value) {
+             oAqi_display.innerHTML = "输入为空";
+          }
+          else{
+            oAqi_display.innerHTML = oAqi_input.value.replace("/^\s+|\s+$/g");
+          }
+          
+      });
+    }
+    //firefox和其他
+    else {
+        oBtn.addEventListener('click',function(){
+            var str = oAqi_input.value.replace("/^\s+|\s+$/g");
+             /* if (re.test(oAqi_input.value)||!oAqi_input.value) {
+             oAqi_display.innerHTML = "输入为空";
+          }
+          else{
+            oAqi_display.innerHTML = oAqi_input.value;
+          }
+          });*/
+    }
+})();
+
+</script>
+</body>
+</html>

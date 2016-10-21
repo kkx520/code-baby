@@ -1,0 +1,10 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+.clearfix:after{content:".";display:block;height: 0;visibility:hidden;clear: both;}
+.wrap{min-width: 600px;clear: both;margin:20px;background: #eee;padding: 20px;border:1px solid #999;}
+.left-box{padding: 20px 0 20px 20px;float: left;width:160px;border:1px solid #999;}
+.left-box img{float: left;}
+.mid-box{padding:30px 20px;margin-left: 230px;margin-right: 170px;width:auto;border:1px solid #999;}
+.mid-box strong{display: block;margin-bottom: 10px;}
+.right-box{padding-bottom: 20px;float:right;width: 120px;border:1px solid #999;}
+.right-box img{display: block;margin: 20px;width: 80px;height: 80px;border: 1px solid #999;}
